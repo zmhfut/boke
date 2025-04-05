@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人中心 - 播客APP</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <div class="status-bar-left">
+        <span class="status-bar-time">9:41</span>
+      </div>
+      <div class="status-bar-right">
+        <span class="status-bar-signal"><i class="fas fa-signal"></i></span>
+        <span class="status-bar-wifi"><i class="fas fa-wifi"></i></span>
+        <span class="status-bar-battery"><i class="fas fa-battery-full"></i> 100%</span>
+      </div>
+    </div>
+    
+    <!-- 内容区域 -->
+    <div class="content">
+      <!-- 页面标题 -->
+      <div class="page-header">
+        <h1 class="page-title">我的</h1>
+        <div class="header-action">
+          <i class="fas fa-cog"></i>
+        </div>
+      </div>
+      
+      <!-- 用户信息 -->
+      <div class="profile-header">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="用户头像" class="profile-avatar">
+        <h2 class="profile-name">Jessica Chen</h2>
+        <p class="profile-bio">热爱音频内容 | 探索世界的声音</p>
+      </div>
+      
+      <!-- 数据统计 -->
+      <div class="profile-stats">
+        <div class="stat-item">
+          <div class="stat-value">28</div>
+          <div class="stat-label">订阅</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">156</div>
+          <div class="stat-label">收藏</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">53</div>
+          <div class="stat-label">历史</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">12</div>
+          <div class="stat-label">创建</div>
+        </div>
+      </div>
+      
+      <!-- 功能菜单 -->
+      <div style="background-color: var(--background-color); border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); margin-bottom: 20px;">
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-download" style="font-size: 20px; color: #2196f3; margin-right: 15px;"></i>
+          <div style="flex: 1;">我的下载</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-history" style="font-size: 20px; color: #03dac6; margin-right: 15px;"></i>
+          <div style="flex: 1;">收听历史</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-heart" style="font-size: 20px; color: #f44336; margin-right: 15px;"></i>
+          <div style="flex: 1;">我的收藏</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 15px;">
+          <i class="fas fa-list" style="font-size: 20px; color: #ff9800; margin-right: 15px;"></i>
+          <div style="flex: 1;">我的订阅</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+      </div>
+      
+      <!-- 最近收听 -->
+      <h2 class="section-title">最近收听</h2>
+      
+      <div class="list-item">
+        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">设计师如何思考</h3>
+          <p class="list-item-subtitle">李佳琦 · 设计</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-clock list-item-icon"></i> 3天前</span>
+            <span style="margin-left: 10px; color: #f44336;"><i class="fas fa-headphones list-item-icon"></i> 继续播放</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">硅谷投资人访谈</h3>
+          <p class="list-item-subtitle">科技新知 · 科技</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-clock list-item-icon"></i> 5天前</span>
+            <span style="margin-left: 10px;"><i class="fas fa-check list-item-icon"></i> 已完成</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">人工智能简史</h3>
+          <p class="list-item-subtitle">吴恩达 · 科技</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-clock list-item-icon"></i> 1周前</span>
+            <span style="margin-left: 10px;"><i class="fas fa-check list-item-icon"></i> 已完成</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 迷你播放器 -->
+    <div class="mini-player">
+      <div class="mini-player-info">
+        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="mini-player-cover">
+        <div>
+          <div class="mini-player-title">设计师如何思考</div>
+          <div class="mini-player-author">李佳琦</div>
+        </div>
+      </div>
+      <div class="mini-player-controls">
+        <i class="fas fa-step-backward player-btn"></i>
+        <i class="fas fa-play player-btn"></i>
+        <i class="fas fa-step-forward player-btn"></i>
+      </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+      <a href="home.html" class="tab-item">
+        <i class="fas fa-home tab-icon"></i>
+        <span>首页</span>
+      </a>
+      <a href="discover.html" class="tab-item">
+        <i class="fas fa-compass tab-icon"></i>
+        <span>发现</span>
+      </a>
+      <a href="search.html" class="tab-item">
+        <i class="fas fa-search tab-icon"></i>
+        <span>搜索</span>
+      </a>
+      <a href="profile.html" class="tab-item active">
+        <i class="fas fa-user tab-icon"></i>
+        <span>我的</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html> 

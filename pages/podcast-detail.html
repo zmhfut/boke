@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>播客详情 - 播客APP</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <div class="status-bar-left">
+        <span class="status-bar-time">9:41</span>
+      </div>
+      <div class="status-bar-right">
+        <span class="status-bar-signal"><i class="fas fa-signal"></i></span>
+        <span class="status-bar-wifi"><i class="fas fa-wifi"></i></span>
+        <span class="status-bar-battery"><i class="fas fa-battery-full"></i> 100%</span>
+      </div>
+    </div>
+    
+    <!-- 内容区域 -->
+    <div class="content">
+      <!-- 返回按钮 -->
+      <div style="padding: 10px 0; display: flex; align-items: center;">
+        <i class="fas fa-arrow-left" style="font-size: 18px; margin-right: 10px;"></i>
+        <span style="font-size: 16px; font-weight: 500;">播客详情</span>
+      </div>
+      
+      <!-- 播客封面和信息 -->
+      <div style="display: flex; margin: 10px 0 20px;">
+        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" style="width: 100px; height: 100px; border-radius: 8px; margin-right: 15px;">
+        <div style="flex: 1;">
+          <h2 style="font-size: 18px; font-weight: 700; margin-bottom: 5px;">设计师如何思考</h2>
+          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 5px;">李佳琦 · 设计频道</p>
+          <div style="display: flex; align-items: center; font-size: 12px; color: var(--text-hint); margin-bottom: 10px;">
+            <span><i class="fas fa-headphones" style="margin-right: 3px;"></i> 1.8万</span>
+            <span style="margin-left: 15px;"><i class="fas fa-star" style="margin-right: 3px;"></i> 4.8分</span>
+            <span style="margin-left: 15px;"><i class="fas fa-list" style="margin-right: 3px;"></i> 42集</span>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn btn-primary" style="flex: 1; height: 36px; display: flex; justify-content: center; align-items: center;">
+              <i class="fas fa-play" style="margin-right: 5px;"></i> 播放
+            </button>
+            <button class="btn btn-secondary" style="width: 36px; height: 36px; padding: 0; display: flex; justify-content: center; align-items: center;">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="btn btn-secondary" style="width: 36px; height: 36px; padding: 0; display: flex; justify-content: center; align-items: center;">
+              <i class="fas fa-share-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 播客简介 -->
+      <div style="background-color: var(--background-color); border-radius: 12px; padding: 15px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 10px;">简介</h3>
+        <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5;">这是一档探讨设计思维和创意过程的播客节目。每周我们邀请知名设计师分享他们的设计理念、创作历程和对行业的思考。无论你是设计师、产品经理，还是对设计感兴趣的听众，都能从中获得启发和成长。</p>
+        <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 10px;">
+          <span style="font-size: 12px; background-color: var(--surface-color); padding: 5px 12px; border-radius: 15px;">设计</span>
+          <span style="font-size: 12px; background-color: var(--surface-color); padding: 5px 12px; border-radius: 15px;">创意</span>
+          <span style="font-size: 12px; background-color: var(--surface-color); padding: 5px 12px; border-radius: 15px;">艺术</span>
+          <span style="font-size: 12px; background-color: var(--surface-color); padding: 5px 12px; border-radius: 15px;">UI/UX</span>
+        </div>
+      </div>
+      
+      <!-- 节目列表 -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+        <h3 style="font-size: 18px; font-weight: 600;">节目列表</h3>
+        <div style="display: flex; align-items: center; font-size: 14px; color: var(--text-secondary);">
+          <span>最新</span>
+          <i class="fas fa-chevron-down" style="margin-left: 5px;"></i>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <div style="margin-right: 15px; display: flex; flex-direction: column; align-items: center; min-width: 40px;">
+          <span style="font-weight: 600;">42</span>
+          <i class="fas fa-play-circle" style="color: var(--primary-color); font-size: 24px; margin-top: 5px;"></i>
+        </div>
+        <div class="list-item-content">
+          <h3 class="list-item-title">交互设计的未来趋势</h3>
+          <p class="list-item-subtitle">2023-05-15 · 45分钟</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-play list-item-icon"></i> 2.5万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-comment list-item-icon"></i> 326</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <div style="margin-right: 15px; display: flex; flex-direction: column; align-items: center; min-width: 40px;">
+          <span style="font-weight: 600;">41</span>
+          <i class="fas fa-play-circle" style="color: var(--primary-color); font-size: 24px; margin-top: 5px;"></i>
+        </div>
+        <div class="list-item-content">
+          <h3 class="list-item-title">品牌设计全解析</h3>
+          <p class="list-item-subtitle">2023-05-08 · 38分钟</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-play list-item-icon"></i> 1.8万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-comment list-item-icon"></i> 215</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <div style="margin-right: 15px; display: flex; flex-direction: column; align-items: center; min-width: 40px;">
+          <span style="font-weight: 600;">40</span>
+          <i class="fas fa-play-circle" style="color: var(--primary-color); font-size: 24px; margin-top: 5px;"></i>
+        </div>
+        <div class="list-item-content">
+          <h3 class="list-item-title">从灵感到作品：创作流程</h3>
+          <p class="list-item-subtitle">2023-05-01 · 52分钟</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-play list-item-icon"></i> 2.1万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-comment list-item-icon"></i> 278</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <div style="margin-right: 15px; display: flex; flex-direction: column; align-items: center; min-width: 40px;">
+          <span style="font-weight: 600;">39</span>
+          <i class="fas fa-check-circle" style="color: var(--text-hint); font-size: 24px; margin-top: 5px;"></i>
+        </div>
+        <div class="list-item-content">
+          <h3 class="list-item-title">设计师的职业成长之路</h3>
+          <p class="list-item-subtitle">2023-04-24 · 40分钟</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-play list-item-icon"></i> 1.9万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-comment list-item-icon"></i> 263</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <div style="margin-right: 15px; display: flex; flex-direction: column; align-items: center; min-width: 40px;">
+          <span style="font-weight: 600;">38</span>
+          <i class="fas fa-check-circle" style="color: var(--text-hint); font-size: 24px; margin-top: 5px;"></i>
+        </div>
+        <div class="list-item-content">
+          <h3 class="list-item-title">色彩心理学在设计中的应用</h3>
+          <p class="list-item-subtitle">2023-04-17 · 35分钟</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-play list-item-icon"></i> 1.7万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-comment list-item-icon"></i> 194</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 迷你播放器 -->
+    <div class="mini-player">
+      <div class="mini-player-info">
+        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="mini-player-cover">
+        <div>
+          <div class="mini-player-title">设计师如何思考</div>
+          <div class="mini-player-author">李佳琦</div>
+        </div>
+      </div>
+      <div class="mini-player-controls">
+        <i class="fas fa-step-backward player-btn"></i>
+        <i class="fas fa-play player-btn"></i>
+        <i class="fas fa-step-forward player-btn"></i>
+      </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+      <a href="home.html" class="tab-item">
+        <i class="fas fa-home tab-icon"></i>
+        <span>首页</span>
+      </a>
+      <a href="discover.html" class="tab-item">
+        <i class="fas fa-compass tab-icon"></i>
+        <span>发现</span>
+      </a>
+      <a href="search.html" class="tab-item">
+        <i class="fas fa-search tab-icon"></i>
+        <span>搜索</span>
+      </a>
+      <a href="profile.html" class="tab-item">
+        <i class="fas fa-user tab-icon"></i>
+        <span>我的</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html> 

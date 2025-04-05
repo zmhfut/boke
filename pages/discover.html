@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>发现 - 播客APP</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <div class="status-bar-left">
+        <span class="status-bar-time">9:41</span>
+      </div>
+      <div class="status-bar-right">
+        <span class="status-bar-signal"><i class="fas fa-signal"></i></span>
+        <span class="status-bar-wifi"><i class="fas fa-wifi"></i></span>
+        <span class="status-bar-battery"><i class="fas fa-battery-full"></i> 100%</span>
+      </div>
+    </div>
+    
+    <!-- 内容区域 -->
+    <div class="content">
+      <!-- 页面标题 -->
+      <div class="page-header">
+        <h1 class="page-title">发现</h1>
+        <div class="header-action">
+          <i class="fas fa-bell"></i>
+        </div>
+      </div>
+      
+      <!-- 上方卡片导航 -->
+      <div style="display: flex; gap: 10px; margin-top: 15px; overflow-x: auto; padding-bottom: 10px;">
+        <div style="min-width: 90px; text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 30px; background-color: #6200ee; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+            <i class="fas fa-crown" style="color: white; font-size: 24px;"></i>
+          </div>
+          <div style="font-size: 14px; margin-top: 8px; font-weight: 500;">排行榜</div>
+        </div>
+        
+        <div style="min-width: 90px; text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 30px; background-color: #03dac6; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+            <i class="fas fa-fire" style="color: white; font-size: 24px;"></i>
+          </div>
+          <div style="font-size: 14px; margin-top: 8px; font-weight: 500;">热门</div>
+        </div>
+        
+        <div style="min-width: 90px; text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 30px; background-color: #ff4081; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+            <i class="fas fa-headphones" style="color: white; font-size: 24px;"></i>
+          </div>
+          <div style="font-size: 14px; margin-top: 8px; font-weight: 500;">分类</div>
+        </div>
+        
+        <div style="min-width: 90px; text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 30px; background-color: #ff9800; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+            <i class="fas fa-star" style="color: white; font-size: 24px;"></i>
+          </div>
+          <div style="font-size: 14px; margin-top: 8px; font-weight: 500;">最新</div>
+        </div>
+        
+        <div style="min-width: 90px; text-align: center;">
+          <div style="width: 60px; height: 60px; border-radius: 30px; background-color: #2196f3; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+            <i class="fas fa-heart" style="color: white; font-size: 24px;"></i>
+          </div>
+          <div style="font-size: 14px; margin-top: 8px; font-weight: 500;">收藏</div>
+        </div>
+      </div>
+      
+      <!-- 排行榜 -->
+      <h2 class="section-title" style="margin-top: 10px;">播客排行榜</h2>
+      
+      <div class="list-item">
+        <div style="width: 24px; text-align: center; margin-right: 10px; font-weight: 700; font-size: 18px; color: #ff4081;">1</div>
+        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">硅谷投资人访谈</h3>
+          <p class="list-item-subtitle">科技新知 · 科技</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-headphones list-item-icon"></i> 5.2万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-arrow-up list-item-icon" style="color: #ff4081;"></i> 3</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <div style="width: 24px; text-align: center; margin-right: 10px; font-weight: 700; font-size: 18px; color: #ff9800;">2</div>
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">创业内幕：从0到1的创业故事</h3>
+          <p class="list-item-subtitle">李开复 · 商业</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-headphones list-item-icon"></i> 4.8万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-arrow-down list-item-icon" style="color: #2196f3;"></i> 1</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <div style="width: 24px; text-align: center; margin-right: 10px; font-weight: 700; font-size: 18px; color: #4caf50;">3</div>
+        <img src="https://images.unsplash.com/photo-1593697972646-2f348871bd56?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">阅读与写作</h3>
+          <p class="list-item-subtitle">王小波 · 文学</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-headphones list-item-icon"></i> 3.2万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-equals list-item-icon"></i> 0</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <div style="width: 24px; text-align: center; margin-right: 10px; font-weight: 700; font-size: 18px;">4</div>
+        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">人工智能简史</h3>
+          <p class="list-item-subtitle">吴恩达 · 科技</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-headphones list-item-icon"></i> 2.9万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-arrow-up list-item-icon" style="color: #ff4081;"></i> 2</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <div style="width: 24px; text-align: center; margin-right: 10px; font-weight: 700; font-size: 18px;">5</div>
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">财经早知道</h3>
+          <p class="list-item-subtitle">财经杂志 · 财经</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-headphones list-item-icon"></i> 2.6万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-arrow-down list-item-icon" style="color: #2196f3;"></i> 1</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 推荐主播 -->
+      <h2 class="section-title" style="margin-top: 20px;">推荐主播</h2>
+      
+      <div style="display: flex; overflow-x: auto; gap: 15px; padding-bottom: 15px;">
+        <div style="display: flex; flex-direction: column; align-items: center; min-width: 80px;">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="主播头像" style="width: 70px; height: 70px; border-radius: 35px; object-fit: cover;">
+          <div style="font-size: 14px; margin-top: 8px; text-align: center;">张三</div>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; min-width: 80px;">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="主播头像" style="width: 70px; height: 70px; border-radius: 35px; object-fit: cover;">
+          <div style="font-size: 14px; margin-top: 8px; text-align: center;">李四</div>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; min-width: 80px;">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="主播头像" style="width: 70px; height: 70px; border-radius: 35px; object-fit: cover;">
+          <div style="font-size: 14px; margin-top: 8px; text-align: center;">王五</div>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; min-width: 80px;">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="主播头像" style="width: 70px; height: 70px; border-radius: 35px; object-fit: cover;">
+          <div style="font-size: 14px; margin-top: 8px; text-align: center;">赵六</div>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; align-items: center; min-width: 80px;">
+          <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="主播头像" style="width: 70px; height: 70px; border-radius: 35px; object-fit: cover;">
+          <div style="font-size: 14px; margin-top: 8px; text-align: center;">钱七</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 迷你播放器 -->
+    <div class="mini-player">
+      <div class="mini-player-info">
+        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="mini-player-cover">
+        <div>
+          <div class="mini-player-title">设计师如何思考</div>
+          <div class="mini-player-author">李佳琦</div>
+        </div>
+      </div>
+      <div class="mini-player-controls">
+        <i class="fas fa-step-backward player-btn"></i>
+        <i class="fas fa-play player-btn"></i>
+        <i class="fas fa-step-forward player-btn"></i>
+      </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+      <a href="home.html" class="tab-item">
+        <i class="fas fa-home tab-icon"></i>
+        <span>首页</span>
+      </a>
+      <a href="discover.html" class="tab-item active">
+        <i class="fas fa-compass tab-icon"></i>
+        <span>发现</span>
+      </a>
+      <a href="search.html" class="tab-item">
+        <i class="fas fa-search tab-icon"></i>
+        <span>搜索</span>
+      </a>
+      <a href="profile.html" class="tab-item">
+        <i class="fas fa-user tab-icon"></i>
+        <span>我的</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html> 

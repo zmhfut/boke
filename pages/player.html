@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>播放器 - 播客APP</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <div class="status-bar-left">
+        <span class="status-bar-time">9:41</span>
+      </div>
+      <div class="status-bar-right">
+        <span class="status-bar-signal"><i class="fas fa-signal"></i></span>
+        <span class="status-bar-wifi"><i class="fas fa-wifi"></i></span>
+        <span class="status-bar-battery"><i class="fas fa-battery-full"></i> 100%</span>
+      </div>
+    </div>
+    
+    <!-- 全屏播放器 -->
+    <div class="full-player">
+      <!-- 播放器头部 -->
+      <div class="player-header">
+        <div class="player-close">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="player-options">
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+      </div>
+      
+      <!-- 播放器封面 -->
+      <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="播客封面" class="player-cover">
+      
+      <!-- 播放器信息 -->
+      <div class="player-info">
+        <h2 class="player-title">设计师如何思考</h2>
+        <p class="player-author">李佳琦 · 设计频道</p>
+      </div>
+      
+      <!-- 进度条 -->
+      <div class="player-progress">
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="progress-time">
+          <span>12:34</span>
+          <span>45:21</span>
+        </div>
+      </div>
+      
+      <!-- 播放控制 -->
+      <div class="player-controls">
+        <div class="control-btn">
+          <i class="fas fa-redo"></i>
+        </div>
+        <div class="control-btn">
+          <i class="fas fa-step-backward"></i>
+        </div>
+        <div class="play-btn">
+          <i class="fas fa-pause-circle"></i>
+        </div>
+        <div class="control-btn">
+          <i class="fas fa-step-forward"></i>
+        </div>
+        <div class="control-btn">
+          <i class="fas fa-random"></i>
+        </div>
+      </div>
+      
+      <!-- 额外控制 -->
+      <div style="display: flex; justify-content: space-around; padding: 0 20px; margin-bottom: 20px;">
+        <div style="text-align: center; color: var(--text-secondary);">
+          <i class="fas fa-heart" style="font-size: 24px; margin-bottom: 8px; display: block;"></i>
+          <span style="font-size: 12px;">收藏</span>
+        </div>
+        <div style="text-align: center; color: var(--text-secondary);">
+          <i class="fas fa-download" style="font-size: 24px; margin-bottom: 8px; display: block;"></i>
+          <span style="font-size: 12px;">下载</span>
+        </div>
+        <div style="text-align: center; color: var(--text-secondary);">
+          <i class="fas fa-comment-alt" style="font-size: 24px; margin-bottom: 8px; display: block;"></i>
+          <span style="font-size: 12px;">评论</span>
+        </div>
+        <div style="text-align: center; color: var(--text-secondary);">
+          <i class="fas fa-share-alt" style="font-size: 24px; margin-bottom: 8px; display: block;"></i>
+          <span style="font-size: 12px;">分享</span>
+        </div>
+      </div>
+      
+      <!-- 播放速度 -->
+      <div style="padding: 0 20px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="font-size: 14px; color: var(--text-secondary);">播放速度</div>
+          <div style="display: flex; gap: 10px;">
+            <div style="padding: 5px 15px; border-radius: 15px; font-size: 14px; background-color: var(--surface-color);">0.5x</div>
+            <div style="padding: 5px 15px; border-radius: 15px; font-size: 14px; background-color: var(--surface-color);">0.8x</div>
+            <div style="padding: 5px 15px; border-radius: 15px; font-size: 14px; background-color: var(--primary-color); color: white;">1.0x</div>
+            <div style="padding: 5px 15px; border-radius: 15px; font-size: 14px; background-color: var(--surface-color);">1.5x</div>
+            <div style="padding: 5px 15px; border-radius: 15px; font-size: 14px; background-color: var(--surface-color);">2.0x</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 睡眠定时 -->
+      <div style="padding: 0 20px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="font-size: 14px; color: var(--text-secondary);">睡眠定时</div>
+          <div style="display: flex; align-items: center;">
+            <span style="font-size: 14px; color: var(--text-secondary); margin-right: 10px;">未设置</span>
+            <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

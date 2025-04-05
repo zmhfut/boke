@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>设置 - 播客APP</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <div class="status-bar-left">
+        <span class="status-bar-time">9:41</span>
+      </div>
+      <div class="status-bar-right">
+        <span class="status-bar-signal"><i class="fas fa-signal"></i></span>
+        <span class="status-bar-wifi"><i class="fas fa-wifi"></i></span>
+        <span class="status-bar-battery"><i class="fas fa-battery-full"></i> 100%</span>
+      </div>
+    </div>
+    
+    <!-- 内容区域 -->
+    <div class="content">
+      <!-- 返回按钮 -->
+      <div style="padding: 10px 0; display: flex; align-items: center; margin-bottom: 15px;">
+        <i class="fas fa-arrow-left" style="font-size: 18px; margin-right: 10px;"></i>
+        <span style="font-size: 18px; font-weight: 600;">设置</span>
+      </div>
+      
+      <!-- 账户设置 -->
+      <h3 style="font-size: 14px; color: var(--text-secondary); margin-bottom: 10px; padding-left: 5px;">账户</h3>
+      
+      <div style="background-color: var(--background-color); border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); margin-bottom: 20px;">
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-user" style="font-size: 18px; color: #2196f3; width: 30px; text-align: center;"></i>
+          <div style="flex: 1; margin-left: 15px;">个人资料</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-bell" style="font-size: 18px; color: #ff9800; width: 30px; text-align: center;"></i>
+          <div style="flex: 1; margin-left: 15px;">消息通知</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 15px;">
+          <i class="fas fa-shield-alt" style="font-size: 18px; color: #4caf50; width: 30px; text-align: center;"></i>
+          <div style="flex: 1; margin-left: 15px;">隐私与安全</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+      </div>
+      
+      <!-- 播放设置 -->
+      <h3 style="font-size: 14px; color: var(--text-secondary); margin-bottom: 10px; padding-left: 5px;">播放</h3>
+      
+      <div style="background-color: var(--background-color); border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); margin-bottom: 20px;">
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-volume-up" style="font-size: 18px; color: #f44336; width: 30px; text-align: center;"></i>
+          <div style="flex: 1; margin-left: 15px;">音频质量</div>
+          <div style="color: var(--text-secondary); font-size: 14px; margin-right: 5px;">高质量</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-clock" style="font-size: 18px; color: #9c27b0; width: 30px; text-align: center;"></i>
+          <div style="flex: 1; margin-left: 15px;">睡眠定时</div>
+          <div style="color: var(--text-secondary); font-size: 14px; margin-right: 5px;">关闭</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-download" style="font-size: 18px; color: #2196f3; width: 30px; text-align: center;"></i>
+            <div style="margin-left: 15px;">仅WiFi下载</div>
+          </div>
+          <label class="switch" style="position: relative; display: inline-block; width: 50px; height: 24px;">
+            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--primary-color); border-radius: 24px; transition: .4s;">
+              <span style="position: absolute; content: ''; height: 20px; width: 20px; left: 28px; bottom: 2px; background-color: white; border-radius: 50%; transition: .4s;"></span>
+            </span>
+          </label>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px;">
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-headphones" style="font-size: 18px; color: #ff9800; width: 30px; text-align: center;"></i>
+            <div style="margin-left: 15px;">后台播放</div>
+          </div>
+          <label class="switch" style="position: relative; display: inline-block; width: 50px; height: 24px;">
+            <input type="checkbox" checked style="opacity: 0; width: 0; height: 0;">
+            <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--primary-color); border-radius: 24px; transition: .4s;">
+              <span style="position: absolute; content: ''; height: 20px; width: 20px; left: 28px; bottom: 2px; background-color: white; border-radius: 50%; transition: .4s;"></span>
+            </span>
+          </label>
+        </div>
+      </div>
+      
+      <!-- 通用设置 -->
+      <h3 style="font-size: 14px; color: var(--text-secondary); margin-bottom: 10px; padding-left: 5px;">通用</h3>
+      
+      <div style="background-color: var(--background-color); border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); margin-bottom: 20px;">
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-moon" style="font-size: 18px; color: #673ab7; width: 30px; text-align: center;"></i>
+          <div style="flex: 1; margin-left: 15px;">深色模式</div>
+          <div style="color: var(--text-secondary); font-size: 14px; margin-right: 5px;">跟随系统</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-language" style="font-size: 18px; color: #009688; width: 30px; text-align: center;"></i>
+          <div style="flex: 1; margin-left: 15px;">语言</div>
+          <div style="color: var(--text-secondary); font-size: 14px; margin-right: 5px;">简体中文</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid var(--border-color);">
+          <i class="fas fa-trash-alt" style="font-size: 18px; color: #f44336; width: 30px; text-align: center;"></i>
+          <div style="flex: 1; margin-left: 15px;">清除缓存</div>
+          <div style="color: var(--text-secondary); font-size: 14px; margin-right: 5px;">128 MB</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+        
+        <div style="display: flex; align-items: center; padding: 15px;">
+          <i class="fas fa-info-circle" style="font-size: 18px; color: #2196f3; width: 30px; text-align: center;"></i>
+          <div style="flex: 1; margin-left: 15px;">关于我们</div>
+          <div style="color: var(--text-secondary); font-size: 14px; margin-right: 5px;">版本 1.0.0</div>
+          <i class="fas fa-chevron-right" style="color: var(--text-hint);"></i>
+        </div>
+      </div>
+      
+      <!-- 退出登录 -->
+      <div style="background-color: var(--background-color); border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); margin-bottom: 20px;">
+        <div style="display: flex; justify-content: center; align-items: center; padding: 15px; color: #f44336;">
+          退出登录
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

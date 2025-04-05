@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索 - 播客APP</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="phone-container">
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <div class="status-bar-left">
+        <span class="status-bar-time">9:41</span>
+      </div>
+      <div class="status-bar-right">
+        <span class="status-bar-signal"><i class="fas fa-signal"></i></span>
+        <span class="status-bar-wifi"><i class="fas fa-wifi"></i></span>
+        <span class="status-bar-battery"><i class="fas fa-battery-full"></i> 100%</span>
+      </div>
+    </div>
+    
+    <!-- 内容区域 -->
+    <div class="content">
+      <!-- 搜索头部 -->
+      <div class="page-header" style="border-bottom: none;">
+        <h1 class="page-title">搜索</h1>
+      </div>
+      
+      <!-- 搜索框 -->
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="搜索播客、主播、标签...">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+      
+      <!-- 热门搜索 -->
+      <h2 class="section-title">热门搜索</h2>
+      
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+        <div style="background-color: var(--surface-color); padding: 8px 15px; border-radius: 20px; font-size: 14px;">
+          <i class="fas fa-fire" style="color: #ff4081; margin-right: 5px;"></i> 人工智能
+        </div>
+        <div style="background-color: var(--surface-color); padding: 8px 15px; border-radius: 20px; font-size: 14px;">
+          <i class="fas fa-fire" style="color: #ff4081; margin-right: 5px;"></i> 创业故事
+        </div>
+        <div style="background-color: var(--surface-color); padding: 8px 15px; border-radius: 20px; font-size: 14px;">
+          <i class="fas fa-fire" style="color: #ff4081; margin-right: 5px;"></i> 冥想正念
+        </div>
+        <div style="background-color: var(--surface-color); padding: 8px 15px; border-radius: 20px; font-size: 14px;">
+          <i class="fas fa-fire" style="color: #ff4081; margin-right: 5px;"></i> 历史解密
+        </div>
+        <div style="background-color: var(--surface-color); padding: 8px 15px; border-radius: 20px; font-size: 14px;">
+          <i class="fas fa-fire" style="color: #ff4081; margin-right: 5px;"></i> 商业分析
+        </div>
+        <div style="background-color: var(--surface-color); padding: 8px 15px; border-radius: 20px; font-size: 14px;">
+          <i class="fas fa-fire" style="color: #ff4081; margin-right: 5px;"></i> 数字游民
+        </div>
+      </div>
+      
+      <!-- 搜索历史 -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <h2 class="section-title" style="margin-bottom: 0;">搜索历史</h2>
+        <button style="background: none; border: none; color: var(--primary-color); font-size: 14px;">
+          <i class="fas fa-trash"></i> 清除
+        </button>
+      </div>
+      
+      <div style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border-color);">
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-history" style="color: var(--text-secondary); margin-right: 10px;"></i>
+            <span>科技创新</span>
+          </div>
+          <i class="fas fa-times" style="color: var(--text-secondary);"></i>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border-color);">
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-history" style="color: var(--text-secondary); margin-right: 10px;"></i>
+            <span>李开复</span>
+          </div>
+          <i class="fas fa-times" style="color: var(--text-secondary);"></i>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border-color);">
+          <div style="display: flex; align-items: center;">
+            <i class="fas fa-history" style="color: var(--text-secondary); margin-right: 10px;"></i>
+            <span>心理健康</span>
+          </div>
+          <i class="fas fa-times" style="color: var(--text-secondary);"></i>
+        </div>
+      </div>
+      
+      <!-- 猜你喜欢 -->
+      <h2 class="section-title">猜你喜欢</h2>
+      
+      <div class="list-item">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">科学实验室：探索宇宙奥秘</h3>
+          <p class="list-item-subtitle">科学前沿 · 科普</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-headphones list-item-icon"></i> 1.5万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-heart list-item-icon"></i> 8千</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <img src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">解密区块链</h3>
+          <p class="list-item-subtitle">数字新知 · 科技</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-headphones list-item-icon"></i> 1.2万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-heart list-item-icon"></i> 5千</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="list-item">
+        <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="list-item-image">
+        <div class="list-item-content">
+          <h3 class="list-item-title">文艺咖啡馆</h3>
+          <p class="list-item-subtitle">文化艺术 · 文学</p>
+          <div class="list-item-detail">
+            <span><i class="fas fa-headphones list-item-icon"></i> 2.1万</span>
+            <span style="margin-left: 10px;"><i class="fas fa-heart list-item-icon"></i> 1.3万</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 迷你播放器 -->
+    <div class="mini-player">
+      <div class="mini-player-info">
+        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="播客封面" class="mini-player-cover">
+        <div>
+          <div class="mini-player-title">设计师如何思考</div>
+          <div class="mini-player-author">李佳琦</div>
+        </div>
+      </div>
+      <div class="mini-player-controls">
+        <i class="fas fa-step-backward player-btn"></i>
+        <i class="fas fa-play player-btn"></i>
+        <i class="fas fa-step-forward player-btn"></i>
+      </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+      <a href="home.html" class="tab-item">
+        <i class="fas fa-home tab-icon"></i>
+        <span>首页</span>
+      </a>
+      <a href="discover.html" class="tab-item">
+        <i class="fas fa-compass tab-icon"></i>
+        <span>发现</span>
+      </a>
+      <a href="search.html" class="tab-item active">
+        <i class="fas fa-search tab-icon"></i>
+        <span>搜索</span>
+      </a>
+      <a href="profile.html" class="tab-item">
+        <i class="fas fa-user tab-icon"></i>
+        <span>我的</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html> 
